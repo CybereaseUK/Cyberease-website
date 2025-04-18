@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="generator" content="Netlify" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberEaseUK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; --logo-font: 'Squada One', cursive; }
+    h2 { color: #00ff99; }
+    .highlight { color: #00ff99; font-weight: bold; }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    });
+    function showThankYouMessage(event) {
+      event.preventDefault();
+      document.getElementById('thankYouMsg').classList.remove('hidden');
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 space-y-20 flex flex-col items-center text-center break-words max-w-full leading-relaxed text-base">
+
+  <header class="text-center fade-up">
+    <img src="LOGO Cover photo Facebook.png" alt="CyberEase Logo" class="mx-auto w-40 mb-4" />
+    <h1 class="text-4xl font-bold mb-2" style="font-family: var(--logo-font);">CYBEREASE</h1>
+    <p class="text-xl text-gray-300">Affordable Cybersecurity & IT Support for Small Businesses in Hertfordshire</p>
+  </header>
+
+  <section class="fade-up max-w-3xl w-full">
+    <h2 class="text-2xl mb-4">🔐 Why Cybersecurity Matters</h2>
+    <div class="space-y-2 text-gray-300">
+      <p>✅ Protect your customers – Their info = your responsibility.</p>
+      <p>✅ Stay up & running – Attacks can shut down your systems—fast.</p>
+      <p>✅ Avoid surprise costs – Scams, ransomware, fake invoices...</p>
+      <p>✅ You’re not “too small” – Over 40% of attacks hit small businesses.</p>
+      <p>✅ Fixes are simple & cheap – Strong passwords, backups, updates.</p>
+    </div>
+  </section>
+
+  <section class="fade-up">
+    <h2 class="text-2xl mb-4">🛡️ About CyberEase</h2>
+    <p class="text-gray-300 mb-2">CyberEaseUK is your friendly neighborhood tech expert, focused on helping small businesses stay protected, up-to-date, and confident online. With over <span class="highlight">5 years of hands-on IT support experience</span>, we understand the everyday challenges small businesses face. That’s why we deliver affordable, jargon-free solutions that actually work.</p>
+    <div class="space-y-2 text-gray-300">
+      <p>🔍 Cyber Checkup – We assess your IT setup and highlight weak points.</p>
+      <p>🛠️ Fix & Secure – We strengthen security using tools you already have.</p>
+      <p>💼 Ongoing IT Support – Need help with devices, email, or basic IT issues? We’re just a message away.</p>
+    </div>
+    <p class="mt-2 text-sm text-gray-400">No tech-speak. No stress. Just solid protection and support. 📍 Based in Hertfordshire</p>
+  </section>
+
+  <section class="fade-up">
+    <h2 class="text-2xl mb-4">🛠️ Our Services</h2>
+    <div class="space-y-6 text-gray-300">
+      <div>
+        <span class="highlight">✅ Complimentary Cybersecurity Assessments</span>
+        <p class="mt-1">We offer free security check-ups tailored to small businesses. Choose between a remote evaluation through our secure questionnaire or an in-person on-site visit. We identify vulnerabilities in your current setup and provide a report with simple, effective recommendations.</p>
+      </div>
+      <div>
+        <span class="highlight">🛠️ One-Time Security Enhancement</span>
+        <p class="mt-1">Our one-time service helps quickly boost your digital defenses. We identify and fix known vulnerabilities, optimize your system for better speed and stability, and apply key security settings to prevent common online threats—all in a single visit or session.</p>
+      </div>
+      <div>
+        <span class="highlight">💻 Laptop/PC Maintenance</span>
+        <p class="mt-1">We keep your business tech running efficiently. Our PC maintenance service includes clearing unused files, installing vital updates, improving speed, and checking for deeper system issues. It's an easy way to keep your devices fast, safe, and reliable.</p>
+      </div>
+      <div>
+        <span class="highlight">🔧 Optimizing Existing Resources</span>
+        <p class="mt-1">No need for expensive upgrades. We help you get the most out of your current devices by tightening security settings, following best data protection practices, and making sure your systems and software are properly updated and maintained.</p>
+      </div>
+      <div>
+        <span class="highlight">💼 IT Support When You Need It</span>
+        <p class="mt-1">From email issues to network troubleshooting, we provide reliable IT support tailored for small teams. Whether you’re stuck with a software error or need help choosing the right tools—we’re here to guide you quickly and affordably.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade-up">
+    <h2 class="text-2xl mb-4">💬 What Our Clients Say</h2>
+    <div class="space-y-4 text-gray-300">
+      <blockquote class="border-l-4 border-green-500 pl-4 italic">“CyberEase made cybersecurity simple. They spotted risks I didn’t even know I had and fixed them fast. Highly recommended!” <br>— Sarah T., Small Business Owner</blockquote>
+      <blockquote class="border-l-4 border-green-500 pl-4 italic">“We got a free audit and walked away with a detailed plan. Professional, affordable, and very helpful.” <br>— James K., Small Business Owner</blockquote>
+    </div>
+  </section>
+
+  <p class="text-center text-gray-400 max-w-2xl mx-auto fade-up">💡 <span class="highlight">Pricing is tailored to your needs.</span> After your free audit, we'll provide a simple, no-pressure quote based on the actual work required — no surprises, just honest advice and fair pricing.</p>
+
+  <section class="fade-up text-center max-w-3xl w-full">
+    <form action="https://formspree.io/f/xvgkyzop" method="POST" onsubmit="showThankYouMessage(event)" class="max-w-md mx-auto space-y-4">
+      
+      
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="text" name="company" placeholder="Company Name" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded bg-gray-800 text-white" rows="4" required></textarea>
+      <button type="submit" class="w-full p-2 rounded bg-green-500 text-black font-bold hover:bg-green-400">Request Free Audit</button>
+    </form>
+    <p id="thankYouMsg" class="text-green-400 text-center mt-4 hidden">✅ Thank you for your request! We'll be in touch shortly.</p>
+  </section>
+
+  <section class="text-center fade-up max-w-3xl w-full">
+    <h2 class="text-xl mb-2 text-green-400">🔗 Connect with us</h2>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://www.instagram.com/cybereaseuk/" target="_blank" class="flex items-center space-x-2 text-green-500 hover:underline">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/instagram.svg" alt="Instagram" class="w-5 h-5" />
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61575027818427" target="_blank" class="flex items-center space-x-2 text-green-500 hover:underline">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/facebook.svg" alt="Facebook" class="w-5 h-5" />
+        <span>Facebook</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-500 text-sm mt-12">
+    © 2025 CyberEaseUK – Based in Hertfordshire | DM or email us: <a href="mailto:cybereaseuk@outlook.com" class="text-green-400">cybereaseuk@outlook.com</a>
+  </footer>
+
+</body>
+</html>
